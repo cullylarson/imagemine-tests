@@ -4,7 +4,7 @@
   "description": "Test different imagemin plugins.",
   "scripts": {
     "lint": "esw --watch --color ./",
-    "all": "npm run imagemin-giflossy && npm run imagemin-gifsicle && npm run imagemin-jpegtran && npm run imagemin-mozjpeg && npm run imagemin-optipng && npm run imagemin-optipng && npm run imagemin-pngquant && npm run imagemin-svgo && npm run low-quality-image-placeholders",
+    "all": "npm run imagemin-giflossy && npm run imagemin-gifsicle && npm run imagemin-jpegtran && npm run imagemin-mozjpeg && npm run imagemin-optipng && npm run imagemin-optipng && npm run imagemin-pngquant && npm run imagemin-svgo && npm run imagemin-webp && npm run low-quality-image-placeholders",
     "imagemin-giflossy": "cd imagemin-giflossy && rm -rf results && mkdir results && node do.js > results/summary.json",
     "imagemin-gifsicle": "cd imagemin-gifsicle && rm -rf results && mkdir results && node do.js > results/summary.json",
     "imagemin-jpegtran": "cd imagemin-jpegtran && rm -rf results && mkdir results && node do.js > results/summary.json",
@@ -12,6 +12,7 @@
     "imagemin-optipng": "cd imagemin-optipng && rm -rf results && mkdir results && node do.js > results/summary.json",
     "imagemin-pngquant": "cd imagemin-pngquant && rm -rf results && mkdir results && node do.js > results/summary.json",
     "imagemin-svgo": "cd imagemin-svgo && rm -rf results && mkdir results && node do.js > results/summary.json",
+    "imagemin-webp": "cd imagemin-webp && rm -rf results && mkdir results && node do.js > results/summary.json",
     "low-quality-image-placeholders": "cd low-quality-image-placeholders && rm -rf results && mkdir results && node do.js > results/summary.json"
   },
   "dependencies": {
@@ -19,11 +20,12 @@
     "imagemin": "^7.0.1",
     "imagemin-giflossy": "^5.1.10",
     "imagemin-gifsicle": "^7.0.0",
-    "imagemin-optipng": "^7.1.0",
+    "imagemin-jpegtran": "^6.0.0",
     "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-optipng": "^7.1.0",
     "imagemin-pngquant": "^8.0.0",
     "imagemin-svgo": "^7.1.0",
-    "imagemin-jpegtran": "^6.0.0",
+    "imagemin-webp": "^5.1.0",
     "lqip": "^2.1.0",
     "pretty-bytes": "^5.3.0",
     "sharp": "^0.25.2"
